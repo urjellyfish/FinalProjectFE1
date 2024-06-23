@@ -3,31 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./homepage_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Home Page</title>
 </head>
 <body>
     <header>
         <!-- navbar and others logo -->
         <div class="navbar">
-            <img src="" alt="logo">
+            <img src="./assets/logo.png" alt="logo" width="125px" class="logo">
             <nav>
                 <ul class="nav_icon">
-                    <li><a href="">HOME </a></li>
-                    <li><a href="">SHOP</a></li>
-                    <li><a href="">CONTACT </a></li>
-                    <li><a href="">BLOG</a></li>
+                    <li id="icon_1"><a href="">Home </a></li>
+                    <li id="icon_2"><a href="">Shop</a></li>
+                    <li id="icon_3"><a href="">Contact </a></li>
+                    <li id="icon_4"><a href="">Blog</a></li>
                 </ul>
             </nav>
+            <div class="icons">
+                <a href=""> <i class="material-icons">person_outline</i> </a>
+                <a href=""> <i class="material-icons">search</i> </a>
+                <a href=""> <i class="material-icons">favorite_border</i> </a>
+                <a href=""> <i class="material-icons">shopping_cart</i> </a>                
+            </div>
         </div> 
         <!-- introduction of the webpage -->
-        <div class="intro_cover">
-            <div class="content_container">
-                <div class="content">
+        <div class="intro">
+            <div class="content_container"> 
+                <div class="background_img">
+                    <div class="content">
+                        <p>New Arrival</p>
+                        <h1>Discover Our <br> New Collection</h1>
+                        <p class="quote">Perfection is achieved not when there is nothing more to add,
+                            but when there is nothing more to take away.</p>
+                        <br class="firstbr"><br>
+                        <a href="" class = "btn">Explore Now</a> <!-- adding a button-->
+                    </div> 
+                </div>
+                <div class="contentmobile">
                     <p>New Arrival</p>
                     <h1>Discover Our <br> New Collection</h1>
-                    <p class="quote">Perfection is achieved not when there is nothing more to add,
-                         but when there is nothing more to take away.</p>
-                    <a href="" class = "btn">EXPLORE NOW</a> <!-- adding a button-->
+                    <br><br>
+                    <a href="" class = "btn">Explore Now</a> <!-- adding a button-->
                 </div>
             </div>
         </div>
@@ -44,7 +64,7 @@
         <div class="col-3"><a href="">Living</a></div>
         <div class="col-3"><a href="">Bedroom</a></div>
     </section>
-    
+
     <!-- Display products -->
     <section class="text">
         <h1>Our Products</h1>
