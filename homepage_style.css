@@ -47,7 +47,7 @@ header{
 }
 .btn{
     display: inline-block;
-    color:aliceblue;
+    color: white;
     font-weight: bold;
     background-color: burlywood;
     border-radius: 30px;
@@ -61,7 +61,7 @@ header{
     .navbar{
         justify-content: end;
     } 
-    .logo{ margin-right: 50px;} 
+    .logo{ margin-right: 40px;} 
     .firstbr{display: none;}
     .intro .content{display: none;} 
 
@@ -97,13 +97,16 @@ header{
 }
 
 /* style categories */
-.text{align-items: center; text-align: center; margin-bottom: 50px;}
+.text{align-items: center; text-align: center; margin: 50px;}
 .row{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
     flex-wrap: wrap;
     padding: 0 50px;
+}
+.row h3{
+    display: inline-block;
 }
 .col-3{
     flex-basis: 20%; 
@@ -115,9 +118,15 @@ header{
     display: inline-block;
     width: 100%; 
     height: 500px;
-    border-radius: 30px;
+    border-radius: 30px; 
+    transition: transform 0.5s;
+    margin-bottom: 10px;
 }
 
+.col-3 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* style feature of product */
 .product_row{
     display: flex;
@@ -129,12 +138,20 @@ header{
     flex-basis: 20%;
     min-width: 220px;
     height: 400px;
-    background-color: antiquewhite;
-    margin: 10px;
+    background-color: rgba(233,233,233);
+    margin: 15px;
+    transition: transform 0.5s;
 }
 
+.products:hover{
+    transform: scale(1.05);
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .content{
     padding: 8px;
+}
+.products .content a:hover {
+    text-decoration: underline 2px;
 }
 .products img{
     width: 100%;
@@ -152,6 +169,7 @@ header{
     color :bisque;
     border-color: bisque;   
     border-style: solid;
+    font-weight: bold;
 }
 /* products breakpoint */
 @media only screen and (max-width: 900px){
@@ -167,29 +185,71 @@ header{
 }
 
 /* style collection */
-.collection_container{
+.collection_container{ 
     display: grid;
-    grid-template-columns: 8% 30% 15% 25% 15%;
-    height: 600px;    
+    grid-template-columns: 8% 30% 15% 25% 8%;
+    height: 700px;    
     gap: 10px;
-    margin: 50px 0;
+    margin: 50px 0 100px 0;
 }
-#item1{height: 100%;}
-#item2{height: 75%; margin-top: 24%; }
-#item3{height: 100%;margin-top: 100%; }
-#item4{height: 70%; margin-top: 34%;}
-#item6{height: 100%; width: 160%;}
-#item7{height: 80%; width: 85%; margin-left: 15%;}
+#item1{
+    background: url('./assets/collection-1.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+#item2{
+    height: 75%; 
+    background: url('./assets/collection-2.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 20%;
+}
+#item3{
+    height: 50%;
+    background: url('./assets/collection-3.jpg') no-repeat center;
+    background-size: cover;
+    grid-row: span 2;
+    margin-top: 70%;
+}
+#item4{
+    height: 70%;
+    background: url('./assets/collection-4.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 28%;
+}
+#item5{
+    background: url('./assets/collection-5.jpg') no-repeat center;
+    background-size: contain; 
+    height: 100%;
+}
+#item6{
+    /* width: 160%; */
+    height: 100%;
+    width: 150%;
+    background: url('./assets/collection-6.jpg') no-repeat left;
+    background-size: cover; 
+}
+#item7{
+    height: 70%;
+    width: 90; 
+    margin-left: 15%;
+    background: url('./assets/collection-7.jpg') no-repeat right;
+    background-size: cover; 
+    margin-bottom: 27%;
+}
 #item8{
-    height: 100%; 
     grid-area: 2/4;
-    width: 60%; 
+    height: 60%;
+    width: 80%; 
+    background: url('./assets/collection-8.jpg') no-repeat center;
+    background-size: cover; 
 }
 #item9{
-    height: 50%; 
+    height: 40%; 
     width: 80%;
+    margin-left: 82%;
     grid-area: 2/4;
-    margin-left: 63%;
+    background: url('./assets/collection-9.jpg') no-repeat center;
+    background-size: cover; 
 }
 @media only screen and (max-width: 900px){
     .collection_container{
@@ -205,9 +265,16 @@ header{
 /* style footer */
 .fade{color: darkgrey}
 
+footer a:hover{
+    text-decoration: underline;
+}
+label a:hover{
+    text-decoration: none;
+}
+
 footer.row{
     align-items: start;
-    padding: 20px;
+    padding: 0 40px;
     margin-top: 50px;
     flex-wrap: wrap-reverse;
     min-width: 200px;
@@ -230,6 +297,9 @@ label{
     width: 150px;
     height: 22px;
     margin-right: 10px;
+}
+#subtext p{
+    margin-top: 10px;
 }
 
 #email_subscr img {display: none;}
@@ -255,4 +325,9 @@ label{
         margin-right: 20px;
     }
 
+}
+/* style copyright */
+.copyright{
+    margin: 50px 10%;
+    font-weight: bold;
 }
