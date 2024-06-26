@@ -7,10 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
+    <script>
+        function scrollToSection(sectionId){
+            var section = document.getElementById(sectionId);
+            if(section){    
+                section.scrollIntoView({
+                    behavior: "smooth", 
+                    block: "start",
+                });
+            }
+        }
+    </script>
     <header>
         <!-- navbar and others logo -->
         <div class="navbar">
@@ -18,16 +30,16 @@
             <nav>
                 <ul class="nav_icon">
                     <li id="icon_1"><a href="">Home </a></li>
-                    <li id="icon_2"><a href="">Shop</a></li>
+                    <li id="icon_2"><a href="javascript:void(0)" onclick="scrollToSection('section3')">Shop</a></li>
                     <li id="icon_3"><a href="">Blog </a></li>
                     <li id="icon_4"><a href="">Contact</a></li>
                 </ul>
             </nav>
             <div class="icons">
-                <a href=""> <i class="material-icons">person_outline</i> </a>
-                <a href=""> <i class="material-icons">search</i> </a>
-                <a href=""> <i class="material-icons">favorite_border</i> </a>
-                <a href=""> <i class="material-icons">shopping_cart</i> </a>                
+                <a href="" id="icon-1"><i class="material-icons">person_outline</i> </a>
+                <a href=""  id="icon-2"><i class="material-icons">search</i> </a>
+                <a href="#" id="icon-3"><i class="material-icons">favorite_border</i> </a>
+                <a href="" id="icon-4"><i class="material-icons">shopping_cart</i> </a>                
             </div>
         </div> 
         <!-- introduction of the webpage -->
@@ -40,14 +52,14 @@
                         <p class="quote">Perfection is achieved not when there is nothing more to add,
                             but when there is nothing more to take away.</p>
                         <br class="firstbr"><br>
-                        <a href="" class = "btn">Explore Now</a> <!-- adding a button-->
+                        <a href="javascript:void(0)" class = "btn" onclick="scrollToSection('section3')">Explore Now</a> <!-- adding a button-->
                     </div> 
                 </div>
                 <div class="contentmobile">
                     <p>New Arrival</p>
                     <h1>Discover Our <br> New Collection</h1>
                     <br><br>
-                    <a href="" class = "btn">Explore Now</a> <!-- adding a button-->
+                    <a href="javascript:void(0)" class = "btn"  onclick="scrollToSection('section3')">Explore Now</a> <!-- adding a mobile button-->
                 </div>
             </div>
         </div>
@@ -75,7 +87,7 @@
     </section>
 
     <!-- Display products -->
-    <section class="text">
+    <section class="text" id="section3">
         <h1>Our Products</h1>
     </section>
     <!-- Products features -->
@@ -153,17 +165,7 @@
         <h1>#Furniture-Collection</h1>
     </section>
     <!-- display difference products image -->
-    <section class="collection_container">
-        <div class="collection_image"id="item1"></div>
-        <div class="collection_image"id="item2"></div>
-        <div class="collection_image"id="item3"></div>
-        <div class="collection_image"id="item4"></div>
-        <div class="collection_image"id="item5"></div>
-        <div class="collection_image"id="item6"></div>
-        <div class="collection_image"id="item7"></div>
-        <div class="collection_image"id="item8"></div>
-        <div class="collection_image"id="item9"></div>
-    </section>
+    <section class="collection_container"> </section>
 
     <hr>
     <!-- adding page footer -->
@@ -175,9 +177,9 @@
             </div>
             <div class="col-4" id="subnav-1">
                 <ul>
-                    <li><a href="" class="fade">Links</a></li>
+                    <li><a href="https://github.com/urjellyfish/FinalProjectFE1" target="_blank" class="fade">Links</a></li>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
+                    <li><a href="javascript:void(0)"  onclick="scrollToSection('section3')">Shop</a></li>
                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
@@ -186,7 +188,7 @@
                     <li><a href="" class="fade">Help</a></li>
                     <li><a href="">Payment Options</a></li>
                     <li><a href="">Returns</a></li>
-                    <li><a href="">Privacy Policies</a></li>
+                    <li><a href="https://www.figma.com/community/file/1252561852327562039" target="_blank">Privacy Policies</a></li>
                 </ul>
             </div>
             <div class="col-4" id="email_subscr">
@@ -203,7 +205,7 @@
 
     <hr style="width: 80%; margin: 0 10%;">
     
-    <p class="copyright">2023 furniro. All right reserved</p>
+    <p class="copyright" style="margin: 50px 10%; font-weight: bold;" >2023 furniro. All right reserved</p>
     
     <!-- End -->
 </body>
