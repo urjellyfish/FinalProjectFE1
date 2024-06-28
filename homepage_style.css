@@ -169,11 +169,15 @@ header{
         font-size: smaller;
         width: 150px;
     }
+
 }
 
 @media only screen and (max-width:900px) {
-    #icon_3, #icon_4{display: none;}
+    .blog, .contact{display: none;}
     .content{font-size: smaller;}
+    #icon-2 input {
+        display: none;
+    }
 }
 
 /* style categories */
