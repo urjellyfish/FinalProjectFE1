@@ -19,19 +19,57 @@ ul {list-style-type: none; }
 .navbar img{padding-left: 50px;}
 nav {flex: 1; text-align: center; padding-left:10%;}
 nav ul {display: inline-block;}
-nav ul li {display: inline-block; padding: 8px 20px; transition: margin 1s, transform 0.5s;}
-.material-icons{transition: margin 1s, transform 0.5s;}
-nav li:hover, .material-icons:hover{
+nav ul li {
+    display: inline-block; 
+    padding: 8px 20px; 
+    transition: margin 1s, transform 0.5s;
+    position: relative;
+}
+nav li:hover{
     transform: scale(1.05);
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 30px;
-    margin: 0 10px;
+    margin-left: 10px;
+}
+/* style icons */
+.material-icons{ 
+    transition: 0.5s;
+    position: relative;
+}
+.material-icons:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+#icon-2 .material-icons:hover {
+    transform: rotate(360deg);
+    box-shadow: none;
+    border-radius: initial; 
+}
+#icon-2 input{
+    position: relative;
+    width: 0;
+    height: 22px;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 30px;
+    top: -10px;
+    left: 50px;
+}
+#icon-2:hover input{
+    opacity: 1;
+    width: 150px;
+    right: 0;
+}
+input[type = "text"]:focus + .material-icons {
+    opacity: 1;
 }
 .icons{
     display: flex;
     margin-right: 20px;
 }
-.icons .material-icons { padding: 20px} 
+.icons .material-icons { padding: 20px;} 
+
 header{
     margin-bottom: 50px;
 }
@@ -90,6 +128,7 @@ header{
 .btn:hover{
     background: #563434;
 }
+
 #icon-3:focus{
     color: darkred;
 }
