@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Product</title>
+    <script src="https://kit.fontawesome.com/5f6575950c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="singleProduct.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,72 +18,88 @@
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">About</a>
-            <a href="#" class="active">Contact</a>
+            <a href="#">Contact</a>
         </nav>
+        <div class="cart-icon">
+            <p><i class="fa-solid fa-cart-shopping"></i></p>
+        </div>
     </header>
     <article>
         <a href="#">Home</a> 
-        <span>
+        <span class="sign">
             >
         </span>
         <a href="#">Shop</a>
-        <span>
-            > | Asgaard sofa
+        <span class="sign">
+            > 
+        </span>
+        <span class="sign">
+            |
+        </span>
+        <span class="sign">
+            Asgaard sofa
         </span>
     </article>
-    <img src="" alt="Asgaard sofa ">
-    <img src="" alt="Asgaard sofa 1">
-    <img src="" alt="Asgaard sofa 2">
-    <img src="" alt="Asgaard sofa 3">
-    <img src="" alt="Asgaard sofa 4">
-    <h2>
+    <div class="container">
+    <div class="sofa">
+        <img src="./assets-product/product-1.jpg" alt="Asgaard sofa 1">
+        <img src="./assets-product/product-1.jpg" alt="Asgaard sofa 2">
+        <img src="./assets-product/product-1.jpg" alt="Asgaard sofa 3">
+        <img src="./assets-product/product-1.jpg" alt="Asgaard sofa 4">
+    </div>
+    <div class="sofa-main">
+        <img src="./assets-product/product1.1.jpeg" alt="Asgaard sofa " width="100%">
+    </div>
+    <div class="content">
+    <h2 class="title">
         Asgaard sofa
     </h2>
-    <h3>
-        Rs. 250,000.00
+    <h3 class="title">
+        2.900.000
     </h3>
-    <img src="" alt="vote"> 
-    <span>
+    <span style="color: rgb(189, 143, 82);">
+    <img src="./assets-product/4.5star.png" alt="vote"> 
         | 5 Customer Review
     </span>
-    <p>
+    <p class="paragraph">
         Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
     </p>
-    <div>
-        size
+    <div class="title">
+        Size
     </div>
     <div>
-        <button>
+        <button class="size-option" style="background-color: rgb(251, 200, 138);">
             L
         </button>
-        <button>
+        <button class="size-option" style="background-color: rgb(251, 200, 138);">
             XL
         </button>
-        <button>
+        <button class="size-option" style="background-color: rgb(251, 200, 138);">
             XS
         </button>
     </div>
-    <div>
-        color
+    <div class="title">
+        Color
     </div>
-    <div class="colorviolet"></div>
-    <div class="colorblack"></div>
-    <div class="coloryellow"></div>
-    <button class="quantity">
-        +1 -
-    </button>
-    <button>
-        Add To Card
+    <div class="color">
+        <div class="color-option" style="background-color: #570981;"></div>
+        <div class="color-option" style="background-color: #000000;"></div>
+        <div class="color-option" style="background-color: #c6910b;"></div>
+
+    </div>
+   <input id="numberInput"  style="width: 30px; height: 30px; overflow: none; border-radius: 4px ; border:1px solid  ;" type="number" value="1" min="1" checked="1">
+    <button class="cartbutton">
+        Add to cart
     </button>
     <hr>
     <div class="information">
         <span class="classify">
             SKU
         </span>
-        <span>
+        <span class="sign">
             :
         </span>
-        <span>
+        <span class="data">
             SS001
         </span>
     </div>
@@ -87,10 +107,10 @@
         <span class="classify">
             Category
         </span>
-        <span>
+        <span class="sign">
             :
         </span>
-        <span>
+        <span class="data">
             Sofas
         </span>
     </div>
@@ -98,10 +118,10 @@
         <span class="classify">
             Tags
         </span>
-        <span>
+        <span class="sign">
             :
         </span>
-        <span>
+        <span class="data">
             Sofa, Chair, Home, Shop
         </span>
     </div>
@@ -109,44 +129,40 @@
         <span class="classify">
             Share
         </span>
-        <span>
+        <span class="sign">
             :
         </span>
-        <div class="contact">
+        <div class="data">
             <a href="#">
-                <img src="" alt="Facebook">
+                <img src="./assets-product/fb.webp" alt="Facebook" width="20px">
             </a>
             <a href="#">
-                <img src="" alt="Linkedin">
+                <img src="./assets-product/likedin.png" alt="Linkedin" width="20px">
             </a>
             <a href="#">
-                <img src="" alt="twitter">
+                <img src="./assets-product/twitter-icon.png" alt="twitter" width="20px">
             </a>
         </div>
     </div>
+</div>
+</div>
     <hr>
-    <div class="information">
-        <div class="description">
-        <button>
-            Description
-        </button>
-        <button>
-            Additional information
-        </button>
-        <button>
-            Reviews [5]
-        </button>     
-        </div>
-        <div>
-            <div class="content-description">
+        <div class="tabs">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+            <label for="tab1" class="tabs__label">
+                Description
+            </label>
+            <div class="tabs__content">
                 <p>
                     Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
                 </p>
                 <p>
                     Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
-                </p>
+                </p>            
             </div>
-            <div class="content-additional information">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+            <label for="tab2" class="tabs__label"> Additional information</label>
+            <div class="tabs__content">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, unde.
                 </p>
@@ -157,7 +173,9 @@
                     Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
                 </p>
             </div>
-            <div class="content-reviews">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+            <label for="tab3" class="tabs__label"> Reviews [5] </label>
+            <div class="tabs__content">
                 <p>
                     Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
                 </p>
@@ -168,121 +186,208 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, ad odio dolor quos eius quasi consequuntur repellendus. Porro, accusantium, magnam totam, aut accusamus voluptas ipsam saepe libero eligendi numquam nisi.
                 </p>
             </div>
+          </div>
+        <div class="img-tabs">
+            <div class="img-alltabs">
+            <img src="./assets-product/product-3.jpg" alt="English Roll Arm" width="100%" height="auto">
         </div>
-        <div>
-            <img src="" alt="English Roll Arm">
-            <img src="" alt="Chaise ">
+        <div class="img-alltabs">
+            <img src="./assets-product/product-3.jpg" alt="Chaise " width="100%" height="auto">
+        </div>
         </div>
     </div>
     <hr>
     <div>
-        <h2>
+        <h2 class="relatedproduct">
             Related Products
         </h2>
-        <div>
-            <div>
-                <img src="#" alt="Syltherin">
-                <div>
-                    <h4>
-                        Syltherin
-                    </h4>
-                    <p>
-                        Stylish cafe chair
-                    </p>
-                    <div>
+        <section class="product">
+            <div class="container1">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./assets-product/product-2.jpg" alt="Syltherin" width="250px" height="350px">
+                        <h4>
+                            Syltherin
+                        </h4>
+                        <p>
+                            Stylish cafe chair
+                        </p>
                         <span>
-                            Rp 2.500.000
+                            2.500.000
                         </span>
-                        <span>
-                            Rp 3.500.000
-                        </span>
+                        <button>
+                            Add to Cart
+                        </button>
                     </div>
-                </div>
-                <span class="sale">
-                    -30%
-                </span>
-            </div>
-            <div>
-                <img src="#" alt="Leviosa">
-                <div>
-                    <h4>
-                        Leviosa
-                    </h4>
-                    <p>
-                        Stylish cafe chair
-                    </p>
-                    <div>
+                    <div class="product-item">
+                        <img src="./assets-product/product-3.jpg" alt="Leviosa" width="250px" height="350px">
+                        <h4>
+                            Leviosa
+                        </h4>
+                        <p>
+                            Stylish cafe chair
+                        </p>
                         <span>
-                            Rp 2.500.000
+                            2.500.000
                         </span>
+                        <button>
+                            Add to Cart
+                        </button>
                     </div>
-                </div>
-            </div>
-            <div>
-                <img src="#" alt="Lolito">
-                <div>
-                    <h4>
-                        Lolito
-                    </h4>
-                    <p>
-                        Luxury big sofa
-                    </p>
-                    <div>
-                        <span>
-                            Rp 7.000.000
-                        </span>
-                        <span>
-                            Rp 14.000.000
-                        </span>
+
+                    <div class="product-item">
+                        <img src="./assets-product/product-4.jpg" alt="Lolito" width="250px" height="350px">
+                        <div>
+                            <h4>
+                                Lolito
+                            </h4>
+                            <p>
+                                Luxury big sofa
+                            </p>
+                            <span>
+                                7.000.000
+                            </span>
+                        </div>
+                        <button>
+                            Add to Cart
+                        </button>
                     </div>
-                </div>
-                <span class="sale">
-                    -50%
-                </span>
-            </div>
-            <div>
-                <img src="#" alt="Respira">
-                <div>
-                    <h4>
-                        Respira
-                    </h4>
-                    <p>
-                        Outdoor bar table and stool
-                    </p>
-                    <div>
-                        <span>
-                            Rp 5.000.000
-                        </span>
+
+                    <div class="product-item">
+                        <img src="./assets-product/recent4.jpg" alt="Respira" width="250px" height="350px">
+                        <div>
+                            <h4>
+                                Respira
+                            </h4>
+                            <p>
+                                Sofa
+                            </p>
+                            <span>
+                                5.000.000
+                            </span>
+                        </div>
+                        <button>
+                            Add to Cart
+                        </button>
                     </div>
+
                 </div>
-                <span class="sale">
-                    New
-                </span>
             </div>
-        </div>
-        <div>
-            <button>
+        </section>
+        <section class="cart">
+            <div class="cartexit">
+                <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            <h2>
+                Cart
+            </h2>
+            <form action="">
+                <table>
+                   <thead> 
+                        <tr>
+                            <th>
+                                Product
+                            </th>
+                            <th>
+                                Cost
+                            </th>
+                            <th>
+                                Number
+                            </th>
+                            <th>
+                                Choice
+                            </th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td style="display: flex;align-items: center;">
+                                    <img src="./assets-product/product-2.jpg" alt="" width="70px">Syltherin
+                                </td>
+                                <td>
+                                    2.500.000
+                                </td>
+                                <td>
+                                    <input style="width: 30px;outline: none;" type="number" value="1" min="0">
+                                </td>
+                                <td style="cursor: pointer;">
+                                    Cancel
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="display: flex;align-items: center;">
+                                    <img src="./assets-product/product-3.jpg" alt="" width="70px">Leviosa
+                                </td>
+                                <td>
+                                    2.500.000
+                                </td>
+                                <td>
+                                    <input style="width: 30px;outline: none;" type="number" value="1" min="0">
+                                </td>
+                                <td style="cursor: pointer;">
+                                    Cancel
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="display: flex;align-items: center;">
+                                    <img src="./assets-product/product-4.jpg" alt="" width="70px">Lolito
+                                </td>
+                                <td>
+                                    7.000.000
+                                </td>
+                                <td>
+                                    <input style="width: 30px;outline: none;" type="number" value="1" min="0">
+                                </td>
+                                <td style="cursor: pointer;">
+                                    Cancel
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="display: flex;align-items: center;">
+                                    <img src="./assets-product/product-2.jpg" alt="" width="70px" height="50px">Respira
+                                </td>
+                                <td>
+                                    5.000.000
+                                </td>
+                                <td>
+                                    <input style="width: 30px;outline: none;" type="number" value="1" min="0">
+                                </td>
+                                <td style="cursor: pointer;">
+                                    Cancel
+                                </td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">
+                        Total price: 
+                </div>
+                <button>
+                    Buy
+                </button>
+            </form>
+        </section>
+        <div class="showmore">
+            <button class="show">
                 Show More
             </button>
         </div>
     </div>
     <hr>
 <footer>
-    <div>
-        <p>
-            Furniro.
+    <div class="Address">
+        <p class="logo">
+            Furniro
         </p>
-        <p>
-            400 University Drive Suite 200 Coral Gables,
+        <p style="color: rgb(134, 117, 94);">
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
         </p>
-        <br>
-        FL 33134 USA
     </div>
-    <div>
+    <div class="Links">
         <p>
             Links
         </p>
-        <div>
+        <div class="Contact">
             <a href="#">
                 Home
             </a>
@@ -297,11 +402,11 @@
             </a>
         </div>
     </div>
-    <div>
+    <div class="support">
         <p>
             Help
         </p>
-        <div>
+        <div class="Contact">
             <a href="#">
                 Payment Options
             </a>
@@ -313,10 +418,7 @@
             </a>
         </div>
     </div>
-    <div>
-        <p>
-            Newsletter
-        </p>
+    <div class="email">
         <form action="">
             <input type="text" placeholder="Enter Your Email Address">
             <button>
@@ -324,10 +426,12 @@
             </button>
         </form>
     </div>
-    <hr>
-    <span>
-        2023 furino. All rights reverved
-    </span>
 </footer>
+<hr>
+    <span class="last">
+        2023 Furino. All rights reverved
+    </span>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
