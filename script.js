@@ -11,4 +11,5 @@ cartbtn.addEventListener("click", function() {
 document.getElementById('numberInput').addEventListener('blur', function() {
     if (this.value === '' || parseInt(this.value) < 1) {
         this.value = 1;
-    }
+    }}
+)
