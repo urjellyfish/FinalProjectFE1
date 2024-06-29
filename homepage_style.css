@@ -22,7 +22,7 @@ nav ul {display: inline-block;}
 nav ul li {
     display: inline-block; 
     padding: 8px 20px; 
-    transition: margin 1s, transform 0.5s;
+    transition: 0.5s;
     position: relative;
 }
 nav li:hover{
@@ -30,8 +30,21 @@ nav li:hover{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 30px;
     margin-left: 10px;
+    background: #563434;
 }
+nav a {
+    transition: 0.5s;
+}
+nav li:hover a{
+    color: white;
+}
+
 /* style icons */
+.icons{
+    display: flex;
+    margin-right: 20px;
+}
+.icons .material-icons { padding: 20px;} 
 .material-icons{ 
     transition: 0.5s;
     position: relative;
@@ -40,11 +53,19 @@ nav li:hover{
     transform: scale(1.05);
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 30px;
+    background: #563434;
+    color: white;
+}
+
+#icon-3:focus .material-icons{
+    color: red;
 }
 #icon-2 .material-icons:hover {
     transform: rotate(360deg);
     box-shadow: none;
     border-radius: initial; 
+    background: none;
+    color: black;
 }
 #icon-2 input{
     position: relative;
@@ -53,22 +74,17 @@ nav li:hover{
     opacity: 0;
     transition: 0.5s;
     border-radius: 30px;
-    top: -10px;
     left: 50px;
+    top: -10px;
 }
 #icon-2:hover input{
     opacity: 1;
     width: 150px;
-    right: 0;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 input[type = "text"]:focus + .material-icons {
     opacity: 1;
 }
-.icons{
-    display: flex;
-    margin-right: 20px;
-}
-.icons .material-icons { padding: 20px;} 
 
 header{
     margin-bottom: 50px;
@@ -129,9 +145,6 @@ header{
     background: #563434;
 }
 
-#icon-3:focus{
-    color: darkred;
-}
 /* adding header breakpoint */
 @media only screen and (max-width: 600px) {
     nav{
